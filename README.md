@@ -1,6 +1,6 @@
 # SpatialTCR Tool - Modular Architecture
 
-A comprehensive tool for spatial T-cell receptor (TCR) analysis with support for both CID-based and cellular-level annotation modes.
+A comprehensive tool for spatial T-cell receptor (TCR) analysis with support for both CID-based and cellular-level annotation modes. Copyright@LabW, Zhejiang University
 
 
 1. **Run CID mode analysis:**
