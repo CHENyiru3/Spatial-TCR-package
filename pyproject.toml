@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "spatialTCR"
+version = "1.0.0"
+description = "Spatial T-cell receptor (TCR) analysis pipeline with CID-based and cellular-level annotation modes"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "LabW, Zhejiang University"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "geopandas",
+    "joblib",
+    "shapely",
+    "pyfastx",
+    "scipy",
+    "numpy",
+]
+
+[project.scripts]
+spatialTCR = "spatialTCR_tool.spatialTCR_cli:main"
+
+[project.urls]
+Repository = "https://github.com/CHENyiru3/Spatial-TCR-package"
+
+[tool.setuptools.packages.find]
+include = ["spatialTCR_tool*"]
